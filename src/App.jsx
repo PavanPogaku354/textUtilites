@@ -9,6 +9,7 @@ import {
   Routes,
   Route,
   Link,
+  Outlet
 } from "react-router-dom";
 
 function App() {
@@ -39,23 +40,14 @@ const toggleMode = ()=>{
   return (
     <>
     <Router>
+    <Navbar title="text utils" mode={mode} toggleMode={toggleMode}/>
       <Routes>
       <Route path = "/" element={
-        <div>
-          <Navbar title="text utils" mode={mode} toggleMode={toggleMode}/>
-          <Textformm showAlert={showAlert} mode={mode}/>
-        </div>
+      <Textformm showAlert={showAlert} mode={mode}/>
+      
          }/>
-         
-    
-              <Route path = "/about" element=
-                               {
-                                <div>
-                                    <Navbar title="text utils" mode={mode} toggleMode={toggleMode}/>
-                      <div className='container my-4'>
-                       <About heading="About Us" mode={mode}/>
-                      </div> 
-                      </div>}/>
+       <Route path = "/about" element=
+                               { <About heading="About Us" mode={mode}/> }/>
         
      </Routes>
       
