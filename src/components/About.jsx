@@ -55,11 +55,11 @@ export default function About(props) {
         {/* Accordion Item 1: About the Website */}
         <div className="accordion-item" style={myStyle}>
           <h2 className="accordion-header">
-            <button className="accordion-button" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               About Text Utilities Website
             </button>
           </h2>
-          <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div className="accordion-body">
               <strong>Text Utilities</strong> is a simple yet powerful online tool that allows you to manipulate and modify text quickly and efficiently. Whether you want to convert text to uppercase, lowercase, remove unwanted spaces, or even count the number of characters and words in your content, Text Utilities is here to help. Our website is designed to provide you with fast, reliable, and easy-to-use text-processing features to improve your writing and workflow.
             </div>
